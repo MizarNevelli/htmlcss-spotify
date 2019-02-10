@@ -1,0 +1,126 @@
+.left-bar{
+  background: black;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: grey;
+  display: inline-block;
+}
+.top-main{
+  height: 85vh;
+}
+.left-bar img{
+  background-size: cover;
+  width: 70%;
+  padding: 15px 0;
+}
+.main{
+  background: purple;
+  float: right;
+  width: calc(100% - 230px);
+  color: white;
+  overflow: scroll;
+  height: 85vh
+}
+.icon-left-bar{
+  color: grey;
+  font-size: 150%;
+  padding: 15px 10px 15px 0;
+}
+.text-small{
+  font-size: 70%;
+}
+.recent-listened{
+  justify-content: flex-start;
+}
+.left-bar-bottom i{
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+.left-bar-bottom{
+   border-bottom: 1px solid grey;
+}
+.top-link{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 100px;
+  color: grey;
+  font-size: 70%;
+  font-weight: bold;
+  letter-spacing: .16em;
+}
+.top-link>span{
+  position: relative;
+  padding: 10px 0;
+}
+.top-link>span:hover{
+  color: white;
+  cursor: pointer;
+}
+.top-link>span:before{
+  content: "";
+  width: 20px;
+  color: white;
+  height: 2px;
+  background-color: #1db954;
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  transform: translateX(-50%);
+  display: none;
+}
+.top-link>span:hover:before{
+  display: inline-block;
+}
+.nav-player{
+  background: #282828;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  color: white;
+}
+.nav-player img{
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+.nav-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-item-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-item-2 input{
+  width: 20vw;
+  border: none;
+  color: grey;
+}
+.fa-play-circle {
+  font-size: 200%;
+}
+.player i{
+  color: grey;
+  padding: 20px;
+}
+.current-artist{
+  font-size: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ffa-backward, .fa-forward{
+  font-size: 80%;
+}
