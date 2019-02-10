@@ -3,10 +3,12 @@
   width: 230px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding: 20px;
   color: grey;
   display: inline-block;
 }
+
 .top-main{
   height: 85vh;
 }
@@ -16,12 +18,44 @@
   padding: 15px 0;
 }
 .main{
-  background: purple;
+  background-image: linear-gradient(to bottom right, #7F7405, black);
   float: right;
   width: calc(100% - 230px);
   color: white;
   overflow: scroll;
+  overflow-x: hidden;
   height: 85vh
+}
+.smallLogo{
+  display: none;
+}
+@media only all and (max-width: 600px) {
+  .left-bar{
+    width: 120px;
+  }
+  .icon-text>span{
+    display:none;
+  }
+  .main{
+    width: calc(100% - 120px);
+  }
+  .recent-listened{
+    display: none;
+  }
+  .nav-item input {
+    display: none;
+  }
+  .smallLogo{
+    display: inline-block;
+  }
+  .bigLogo{
+    display: none;
+  }
+  .left-bar img{
+    width: 200%;
+    position: relative;
+    left: -15px;
+  }
 }
 .icon-left-bar{
   color: grey;
@@ -44,7 +78,7 @@
 .top-link{
   display: flex;
   justify-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 40px 100px;
   color: grey;
@@ -80,7 +114,7 @@
   position: sticky;
   bottom: 0;
   width: 100%;
-  height: 15vh;
+  height: 90px;
   color: white;
 }
 .nav-player img{
@@ -92,6 +126,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .nav-item{
   display: flex;
@@ -123,4 +158,7 @@
 }
 .ffa-backward, .fa-forward{
   font-size: 80%;
+}
+.nav-item input {
+  margin: 0 30px;
 }
