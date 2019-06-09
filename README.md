@@ -1,10 +1,10 @@
 # htmlcss-spotify
 
 Spotify copy
-Spotify has been the first full page project after the first month at Boolean Careers
+Spotify has been the first full responsive page project after the first month at Boolean Careers
 
 Used Technologies
-HTML + CSS
+HTML + CSS  + Bootstrap
 
 # Preview
 
