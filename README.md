@@ -3,7 +3,7 @@
 # Spotify copy
 Spotify has been the first full page responsive project after the first month at Boolean Careers
 
-Used Technologies
+ Technologies
 HTML + CSS  + Bootstrap
 
 ## Preview
